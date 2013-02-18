@@ -1,0 +1,123 @@
+body
+{
+	background:url(back2.png) no-repeat;
+}
+
+h5
+{
+	font-family: Segoe Script;
+	margin-top: 180px;
+	margin-left:290px;
+	font-size:20px;
+	color:#302617;
+
+}
+
+
+
+
+#ex h3
+{
+	font-family: Segoe Script;
+	margin-top: 80px;
+	margin-left:80px;
+	font-size:20px;
+	color:#302617;
+
+}
+
+#div_ex
+{
+	width:820px;
+
+}
+ul{
+
+width:820px;
+}
+
+#ex
+{
+	
+	margin-left:200px;
+	margin-right:300px;
+	
+}
+#ex li h2
+{
+	
+	position:relative;
+	top:-1px;
+	right:6px;
+	text-decoration:none;
+	color: white;
+	font-weight:normal;
+	width:140px;
+	height:0px;
+	text-align:center;
+	background-color: rgba(0, 0, 0, 0.5);
+	font-variant: small-caps;
+	font-size:15px;
+	 border-radius:25px;
+	-moz-border-radius:25px;
+	margin-top:-45px;
+	display:block;
+	letter-spacing:2px;
+	
+	
+	
+	background-position:190px 30px;
+	background-repeat:no-repeat;
+	background-size:10px 10px;
+	transition:height 1s ease 0s;
+	overflow:hidden;
+}
+#ex li
+{
+
+	float: left;
+	display:inline;
+	list-style:none;
+	margin: 7px;
+	height:150px;
+	width:150px;
+	
+}
+
+h2
+{
+
+	font-family: Segoe Script;
+	width:20px;
+	font-size:5px;
+	color:#302617;
+
+}
+
+#ex li a img
+{
+	box-shadow:2px -2px 16px 1px #888, inset 2px -2px 6px 1px #888;
+	color:#302617;
+	border-style:solid;
+	
+	position:relative;
+	display-inline:block;
+	width:120px;
+	height:120px;	
+	margin-top:1px;
+	
+	border-radius:25px;
+	-moz-border-radius:25px;
+}
+
+
+#ex li:hover h2
+{
+	height:70px; 
+
+}
+
+
+
+
+

@@ -1,0 +1,224 @@
+<html>
+
+	<head>
+	
+	<style type="text/css">
+	body 
+	{
+		background-image:url('back2.png');
+		background-repeat: no-repeat;
+	}
+	
+	h1
+	{
+		font-family: Segoe Script;
+		margin-top: 80px;
+		margin-left:380px;
+		font-size:50px;
+		color:#302617;
+	}
+
+
+
+	h2
+	{
+		font-family: Segoe Script;
+		margin-top: 20px;
+		margin-left:480px;
+		font-size:30px;
+		color:#302617;
+
+	}
+
+
+
+
+
+	
+	a
+	{
+		text-decoration:none;
+		color:#160706;
+	}
+	
+	a:hover
+	{
+		color:#d20006;
+		font-weight:bold;
+	}
+	
+	
+	
+	input
+	{
+		margin-left:0px;
+		
+		font-size:50px;
+	}
+	
+	h3
+	{
+		
+		font-family: Segoe Script;
+		margin-top: 10px;
+		margin-left:280px;
+		font-size:20px;
+		color:#7a7266;
+	}
+	
+	
+	li
+	{
+		
+		list-style:none;
+	}
+	
+
+	#tutorial-drop1{margin-left:10px;}
+	
+
+	#koumpi
+	{
+			
+		margin-top:50px;
+		margin-left:480px;
+	}
+
+	#koumpi:hover
+	{
+		background:url(searchhover.png);
+		margin-top:50px;
+		margin-left:480px;
+	}
+
+	#id4
+	{
+		
+		padding-right:200px;
+		margin-left:350px;		
+		width:150px;
+	}
+
+
+	
+.texthidden {display:inline}
+
+.shown3 {
+
+		display:block; 
+		height:150px;
+		overflow:auto;
+		overflow-x: auto;
+		overflow-y: auto;
+		
+		margin-right:250px;
+		background: none repeat scroll 0% 0% rgba(0, 0, 0, 0);
+		
+		background-image: none;
+		background-repeat: repeat;
+		background-attachment: scroll;
+		background-position: 0% 0%;
+		background-clip: border-box;
+		background-origin: padding-box;
+		background-size: auto auto;
+}
+
+
+
+</style>
+
+<script type="text/javascript">
+document.write('<style>.texthidden {display:none} </style>');
+</script>
+
+<script type="text/Javascript">
+function expandcollapse (postid) {
+whichpost = document.getElementById(postid);
+
+
+
+if(postid=="id4")
+{
+if (whichpost.className=="shown3") {
+whichpost.className="texthidden";
+}
+else {
+whichpost.className="shown3";
+}
+
+}
+
+
+
+
+}
+</script>
+	
+	
+	
+	
+	</head>
+	
+	<body>
+	
+<h1>Choose a Wine</h1>
+	
+	
+<form id="f1" method="POST" action="Search">
+<ul>
+<li>
+<h2><a href="javascript:void(0);" onclick="expandcollapse('id4')"> Wines </a></h2>
+<ul class="texthidden" id="id4">
+<li><input type="checkbox" name="Wines" value="Agiorghitiko">Agiorghitiko</li>
+<li><input type="checkbox" name="Wines" value="Xinomavro">Xinomavro</li>
+<li><input type="checkbox" name="Wines" value="Mandilaria">Mandilaria</li>
+<li><input type="checkbox" name="Wines" value="Mavrodaphne">Mavrodaphne</li>
+<li><input type="checkbox" name="Wines" value="Kotsifali">Kotsifali</li>
+<li><input type="checkbox" name="Wines" value="Assyrtiko">Assyrtiko</li>
+<li><input type="checkbox" name="Wines" value="Athiri">Athiri</li>
+<li><input type="checkbox" name="Wines" value="Debina">Debina</li>
+<li><input type="checkbox" name="Wines" value="Lagorthi">Lagorthi</li>
+<li><input type="checkbox" name="Wines" value="Malagousia">Malagousia</li>
+<li><input type="checkbox" name="Wines" value="Moschofilero">Moschofilero</li>
+<li><input type="checkbox" name="Wines" value="Retsina">Retsina</li>
+<li><input type="checkbox" name="Wines" value="Robola">Robola</li>
+<li><input type="checkbox" name="Wines" value="Roditis">Roditis</li>
+<li><input type="checkbox" name="Wines" value="Savatiano">Savatiano</li>
+
+
+
+<li><input type="checkbox" name="Wines" value="Chardonnay">Chardonnay</li>
+<li><input type="checkbox" name="Wines" value="Chenin Blanc">Chenin Blanc</li>
+<li><input type="checkbox" name="Wines" value="Gewurztraminer">Gewurztraminer</li>
+<li><input type="checkbox" name="Wines" value="Pinot Gris">Pinot Gris</li>
+<li><input type="checkbox" name="Wines" value="Riesling">Riesling</li>
+<li><input type="checkbox" name="Wines" value="Sauvignon Blanc">Sauvignon Blanc</li>
+<li><input type="checkbox" name="Wines" value="Semillon">Semillon</li>
+<li><input type="checkbox" name="Wines" value="Viognier">Viognier</li>
+
+<li><input type="checkbox" name="Wines" value="Barbera">Barbera</li>
+<li><input type="checkbox" name="Wines" value="Brunello">Brunello</li>
+<li><input type="checkbox" name="Wines" value="Cabernet Franc">Cabernet Franc</li>
+<li><input type="checkbox" name="Wines" value="Cabernet Sauvignon">Cabernet Sauvignon</li>
+<li><input type="checkbox" name="Wines" value="Dolcetto">Dolcetto</li>
+<li><input type="checkbox" name="Wines" value="Gamay">Gamay</li>
+<li><input type="checkbox" name="Wines" value="Grenache">Grenache</li>
+<li><input type="checkbox" name="Wines" value="Malbec">Malbec</li>
+<li><input type="checkbox" name="Wines" value="Merlot">Merlot</li>
+<li><input type="checkbox" name="Wines" value="Mourvedre">Mourvedre</li>
+<li><input type="checkbox" name="Wines" value="Nebbiolo">Nebbiolo</li>
+<li><input type="checkbox" name="Wines" value="Pinot Noir">Pinot Noir</li>
+<li><input type="checkbox" name="Wines" value="Sangiovese">Sangiovese</li>
+<li><input type="checkbox" name="Wines" value="Syrah">Syrah</li>
+<li><input type="checkbox" name="Wines" value="Tempranillo">Tempranillo</li>
+<li><input type="checkbox" name="Wines" value="Zinfandel">Zinfandel</li>
+
+</ul>
+</li>
+</ul>
+<input id="koumpi" type="image" src="search.png" value="Find me a recipe">
+</form>
+
+	
+	</body>
+</html>

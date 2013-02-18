@@ -1,0 +1,471 @@
+<html>
+<title>Selection</title>
+	<head>
+	
+	<style type="text/css">
+	body 
+	{
+		background-image:url('back2.png');
+		background-repeat: no-repeat;
+	}
+	
+	h1
+	{
+		font-family: Segoe Script;
+		margin-top: 80px;
+		margin-left:380px;
+		font-size:50px;
+		color:#302617;
+	}
+	
+	a
+	{
+		text-decoration:none;
+		color:#160706;
+	}
+	
+	a:hover
+	{
+		color:#d20006;
+		font-weight:bold;
+	}
+	
+	h2
+	{
+font-family: Segoe Script;
+		margin-top: 20px;
+		margin-left:380px;
+		font-size:30px;
+		color:#302617;
+
+	}
+	
+	input
+	{
+		margin-left:0px;
+		
+		font-size:50px;
+	}
+	
+	h3
+	{
+		
+		font-family: Segoe Script;
+		margin-top: 10px;
+		margin-left:280px;
+		font-size:20px;
+		color:#7a7266;
+	}
+	
+	
+	li
+	{
+		
+		list-style:none;
+	
+	}
+	
+
+	#tutorial-drop1{margin-left:10px;}
+	
+	#id1
+	{
+	
+		padding-right:200px;
+		margin-left:350px;		
+		width:150px;
+	}
+
+	#id2
+	{
+		
+		padding-right:200px;
+		margin-left:350px;		
+		width:150px;
+	}
+
+	#id3
+	{
+		
+		padding-right:200px;
+		margin-left:350px;		
+		width:150px;
+	}
+	
+		#id5
+	{
+		
+		padding-right:200px;
+		margin-left:350px;		
+		width:150px;
+	}
+
+	#koumpi
+	{
+			
+		margin-top:50px;
+		margin-left:400px;
+	}
+
+	#koumpi:hover
+	{
+		background:url(searchhover.png);
+		margin-top:50px;
+		margin-left:400px;
+	}
+
+	
+.texthidden {display:inline}
+.shown1 {
+
+		display:block; 
+		height:150px;
+		overflow:auto;
+		overflow-x: auto;
+		overflow-y: auto;
+		
+		margin-right:250px;
+		background: none repeat scroll 0% 0% rgba(0, 0, 0, 0);
+		background-image: none;
+		background-repeat: repeat;
+		background-attachment: scroll;
+		background-position: 0% 0%;
+		background-clip: border-box;
+		background-origin: padding-box;
+		background-size: auto auto;
+}
+
+
+
+
+
+
+
+.shown2 {
+
+		display:block; 
+		height:150px;
+		overflow:auto;
+		overflow-x: auto;
+		overflow-y: auto;
+		
+		margin-right:250px;
+		background: none repeat scroll 0% 0% rgba(0, 0, 0, 0);
+		
+		background-image: none;
+		background-repeat: repeat;
+		background-attachment: scroll;
+		background-position: 0% 0%;
+		background-clip: border-box;
+		background-origin: padding-box;
+		background-size: auto auto;
+}
+
+
+
+
+
+.shown3 {
+
+		display:block; 
+		height:150px;
+		overflow:auto;
+		overflow-x: auto;
+		overflow-y: auto;
+		
+		margin-right:250px;
+		background: none repeat scroll 0% 0% rgba(0, 0, 0, 0);
+		
+		background-image: none;
+		background-repeat: repeat;
+		background-attachment: scroll;
+		background-position: 0% 0%;
+		background-clip: border-box;
+		background-origin: padding-box;
+		background-size: auto auto;
+}
+
+
+.shown5 {
+
+		display:block; 
+		height:150px;
+		overflow:auto;
+		overflow-x: auto;
+		overflow-y: auto;
+		
+		margin-right:250px;
+		background: none repeat scroll 0% 0% rgba(0, 0, 0, 0);
+		
+		background-image: none;
+		background-repeat: repeat;
+		background-attachment: scroll;
+		background-position: 0% 0%;
+		background-clip: border-box;
+		background-origin: padding-box;
+		background-size: auto auto;
+}
+
+
+
+
+
+
+
+
+
+</style>
+
+<script type="text/javascript">
+document.write('<style>.texthidden {display:none} </style>');
+</script>
+
+<script type="text/Javascript">
+function expandcollapse (postid) {
+whichpost = document.getElementById(postid);
+
+if(postid=="id1")
+{
+if (whichpost.className=="shown1") {
+whichpost.className="texthidden";
+}
+else {
+whichpost.className="shown1";
+}
+
+
+}
+
+else if(postid=="id2")
+{
+if (whichpost.className=="shown2") {
+whichpost.className="texthidden";
+}
+else {
+whichpost.className="shown2";
+}
+
+}
+
+
+else if(postid=="id3")
+{
+if (whichpost.className=="shown3") {
+whichpost.className="texthidden";
+}
+else {
+whichpost.className="shown3";
+}
+
+}
+
+
+else if(postid=="id4")
+{
+if (whichpost.className=="shown3") {
+whichpost.className="texthidden";
+}
+else {
+whichpost.className="shown3";
+}
+
+}
+
+
+
+
+else if(postid=="id5")
+{
+if (whichpost.className=="shown5") {
+whichpost.className="texthidden";
+}
+else {
+whichpost.className="shown5";
+}
+
+}
+
+
+
+
+}
+</script>
+	
+	
+	
+	
+	</head>
+	
+	<body>
+	
+<form id="f1" method="POST" action="SearchIng">
+<ul>
+<h1>Ingredients</h1>
+<h3>Now tell us..what do you have in your shelves?</h3>
+
+<li>
+<h2><a href="javascript:void(0);" onclick="expandcollapse('id1')"> Vegetables </a></h2>
+<ul class="texthidden" id="id1">
+<li><input type="checkbox" name="Vegetables" value="Artichoke">Artichoke</li>
+<li><input type="checkbox" name="Vegetables" value="Asparagus">Asparagus</li>
+<li><input type="checkbox" name="Vegetables" value="Aubergine">Aubergine</li>
+<li><input type="checkbox" name="Vegetables" value="Beet">Beet</li>
+<li><input type="checkbox" name="Vegetables" value="Broccoflower">Broccoflower</li>
+<li><input type="checkbox" name="Vegetables" value="Broccoli">Broccoli</li>
+<li><input type="checkbox" name="Vegetables" value="Brussels sprout">Brussels sprout</li>
+<li><input type="checkbox" name="Vegetables" value="Cabbage">Cabbage</li>
+<li><input type="checkbox" name="Vegetables" value="Capsicum">Capsicum</li>
+<li><input type="checkbox" name="Vegetables" value="Carrot">Carrot</li>
+<li><input type="checkbox" name="Vegetables" value="Cauliflower">Cauliflower</li>
+<li><input type="checkbox" name="Vegetables" value="Chili pepper">Chili pepper</li>
+<li><input type="checkbox" name="Vegetables" value="Cucumber">Cucumber</li>
+<li><input type="checkbox" name="Vegetables" value="Ginger">Ginger</li>
+<li><input type="checkbox" name="Vegetables" value="Legume">Legume</li>
+<li><input type="checkbox" name="Vegetables" value="Lettuce">Lettuce</li>
+<li><input type="checkbox" name="Vegetables" value="Maize">Maize</li>
+<li><input type="checkbox" name="Vegetables" value="Mushroom">Mushroom</li>
+<li><input type="checkbox" name="Vegetables" value="Okra">Okra</li>
+<li><input type="checkbox" name="Vegetables" value="Onion">Onion</li>
+<li><input type="checkbox" name="Vegetables" value="Potato">Potato</li>
+<li><input type="checkbox" name="Vegetables" value="Pumpkin">Pumpkin</li>
+<li><input type="checkbox" name="Vegetables" value="Radish">Radish</li>
+<li><input type="checkbox" name="Vegetables" value="Spinach">Spinach</li>
+<li><input type="checkbox" name="Vegetables" value="Sweet potato">Sweet potato</li>
+<li><input type="checkbox" name="Vegetables" value="Tomato">Tomato</li>
+<li><input type="checkbox" name="Vegetables" value="Turnip">Turnip</li>
+<li><input type="checkbox" name="Vegetables" value="Zucchini">Zucchini</li>
+</ul>
+</li>
+
+<li>
+<h2><a href="javascript:void(0);" onclick="expandcollapse('id2')"> Herbs & Spices </a></h2>
+<ul class="texthidden" id="id2">
+
+<li><input type="checkbox" name="Herbs" value="Anise">Anise</li>
+<li><input type="checkbox" name="Herbs" value="Basil">Basil</li>
+<li><input type="checkbox" name="Herbs" value="Caraway">Caraway</li>
+<li><input type="checkbox" name="Herbs" value="Celery">Celery</li>
+<li><input type="checkbox" name="Herbs" value="Chives">Chives</li>
+<li><input type="checkbox" name="Herbs" value="Coriander">Coriander</li>
+<li><input type="checkbox" name="Herbs" value="Chamomile">Chamomile</li>
+<li><input type="checkbox" name="Herbs" value="Dill">Dill</li>
+<li><input type="checkbox" name="Herbs" value="Fennel">Fennel</li>
+<li><input type="checkbox" name="Herbs" value="Garlic">Garlic</li>
+<li><input type="checkbox" name="Herbs" value="Green pepper">Green pepper</li>
+<li><input type="checkbox" name="Herbs" value="Lavender">Lavender</li>
+<li><input type="checkbox" name="Herbs" value="Lemon Grass">Lemon Grass</li>
+<li><input type="checkbox" name="Herbs" value="Marjoram">Marjoram</li>
+<li><input type="checkbox" name="Herbs" value="Oregano">Oregano</li>
+<li><input type="checkbox" name="Herbs" value="Paprika">Paprika</li>
+<li><input type="checkbox" name="Herbs" value="Parsley">Parsley</li>
+<li><input type="checkbox" name="Herbs" value="Rosemary">Rosemary</li>
+<li><input type="checkbox" name="Herbs" value="Thyme">Thyme</li>
+<li><input type="checkbox" name="Herbs" value="Wasabi">Wasabi</li>
+<li><input type="checkbox" name="Herbs" value="Watercress">Watercress</li>
+</ul>
+</li>
+
+<li>
+<h2><a href="javascript:void(0);" onclick="expandcollapse('id3')"> Meat & Fish</a></h2>
+<ul class="texthidden" id="id3">
+<li><input type="checkbox" name="Meat" value="Bacon">Bacon</li>
+<li><input type="checkbox" name="Meat" value="Beef">Beef</li>
+<li><input type="checkbox" name="Meat" value="Beef Steak">Beef Steak</li>
+<li><input type="checkbox" name="Meat" value="Blade Steak">Blade Steak</li>
+<li><input type="checkbox" name="Meat" value="Bon fillet">Bon fillet</li>
+<li><input type="checkbox" name="Meat" value="Chicken">Chicken</li>
+<li><input type="checkbox" name="Meat" value="Chicken Breast">Chicken Breast</li>
+<li><input type="checkbox" name="Meat" value="Chicken Leg">Chicken Leg</li>
+<li><input type="checkbox" name="Meat" value="Chicken Wing">Chicken Wing</li>
+<li><input type="checkbox" name="Meat" value="Chuck Steak">Chuck Steak</li>
+<li><input type="checkbox" name="Meat" value="Crab">Crab</li>
+<li><input type="checkbox" name="Meat" value="Gilthead">Gilthead</li>
+<li><input type="checkbox" name="Meat" value="Ham">Ham</li>
+<li><input type="checkbox" name="Meat" value="Ham Rib Roast">Ham Rib Roast</li>
+<li><input type="checkbox" name="Meat" value="Lavraki">Lavraki</li>
+<li><input type="checkbox" name="Meat" value="Lean Mins">Lean Mins</li>
+<li><input type="checkbox" name="Meat" value="Lobster">Lobster</li>
+<li><input type="checkbox" name="Meat" value="Pork Loin Back Ribs">Pork Loin Back Ribs</li>
+<li><input type="checkbox" name="Meat" value="Rib Eye">Rib Eye</li>
+<li><input type="checkbox" name="Meat" value="Salmon">Salmon</li>
+<li><input type="checkbox" name="Meat" value="Sardelis">Sardelis</li>
+<li><input type="checkbox" name="Meat" value="Sirloin Steak">Sirloin Steak</li>
+<li><input type="checkbox" name="Meat" value="Stewin Steak">Stewin Steak</li>
+</ul>
+</li>
+
+<li>
+<h2><a href="javascript:void(0);" onclick="expandcollapse('id5')"> Fluids & Others </a></h2>
+<ul class="texthidden" id="id5">
+<li><input type="checkbox" name="Fluids" value="Basmati Rice">Basmati Rice</li>
+<li><input type="checkbox" name="Fluids" value="Beef Broth">Beef Broth</li>
+<li><input type="checkbox" name="Fluids" value="Blue Cheese">Blue Cheese</li>
+<li><input type="checkbox" name="Fluids" value="Bread">Bread</li>
+<li><input type="checkbox" name="Fluids" value="Bree">Bree</li>
+<li><input type="checkbox" name="Fluids" value="Butter">Butter</li>
+<li><input type="checkbox" name="Fluids" value="Chicken Broth">Chicken Broth</li>
+<li><input type="checkbox" name="Fluids" value="Corn Flour">Corn Flour</li>
+<li><input type="checkbox" name="Fluids" value="Corn Oil">Corn Oil</li>
+<li><input type="checkbox" name="Fluids" value="Conchiglie">Conchiglie</li>
+<li><input type="checkbox" name="Fluids" value="Edam">Edam</li>
+<li><input type="checkbox" name="Fluids" value="Farfalle">Farfalle</li>
+<li><input type="checkbox" name="Fluids" value="Feta Cheese">Feta Cheese</li>
+<li><input type="checkbox" name="Fluids" value="Fettuce">Fettuce</li>
+<li><input type="checkbox" name="Fluids" value="Flour">Flour</li>
+<li><input type="checkbox" name="Fluids" value="Fusilli">Fusilli</li>
+<li><input type="checkbox" name="Fluids" value="Gorgonzola">Gorgonzola</li>
+<li><input type="checkbox" name="Fluids" value="Gouda">Gouda</li>
+<li><input type="checkbox" name="Fluids" value="Graviera">Graviera</li>
+<li><input type="checkbox" name="Fluids" value="Kaseri">Kaseri</li>
+<li><input type="checkbox" name="Fluids" value="Katiki">Katiki</li>
+<li><input type="checkbox" name="Fluids" value="Kefalograviera">Kefalograviera</li>
+<li><input type="checkbox" name="Fluids" value="Kefalotyri">Kefalotyri</li>
+<li><input type="checkbox" name="Fluids" value="Kous-kous">Kous-kous</li>
+<li><input type="checkbox" name="Fluids" value="Lasagne">Lasagne</li>
+<li><input type="checkbox" name="Fluids" value="Leerdammer">Leerdammer</li>
+<li><input type="checkbox" name="Fluids" value="Lemon Juice">Lemon Juice</li>
+<li><input type="checkbox" name="Fluids" value="Lemon Zime">Lemon Zime</li>
+<li><input type="checkbox" name="Fluids" value="Lime Juice">Lime Juice</li>
+<li><input type="checkbox" name="Fluids" value="Lime Zime">Lime Zime</li>
+<li><input type="checkbox" name="Fluids" value="Maize Oil">Maize Oil</li>
+<li><input type="checkbox" name="Fluids" value="Margarine">Margarine</li>
+<li><input type="checkbox" name="Fluids" value="Mascarpone">Mascarpone</li>
+<li><input type="checkbox" name="Fluids" value="Metsovone">Metsovone</li>
+<li><input type="checkbox" name="Fluids" value="Milk">Milk</li>
+<li><input type="checkbox" name="Fluids" value="Mozzarella">Mozzarella</li>
+<li><input type="checkbox" name="Fluids" value="Myzithra">Myzithra</li>
+<li><input type="checkbox" name="Fluids" value="Noodle">Noodle</li>
+<li><input type="checkbox" name="Fluids" value="Olive Oil">Olive Oil</li>
+<li><input type="checkbox" name="Fluids" value="Orange Juice">Orange Juice</li>
+<li><input type="checkbox" name="Fluids" value="Orage Zime">Orage Zime</li>
+<li><input type="checkbox" name="Fluids" value="Orzo">Orzo</li>
+<li><input type="checkbox" name="Fluids" value="Parmigiano">Parmigiano</li>
+<li><input type="checkbox" name="Fluids" value="Penne">Penne</li>
+<li><input type="checkbox" name="Fluids" value="Perciatelli">Perciatelli</li>
+<li><input type="checkbox" name="Fluids" value="Red Wine Dry">Red Wine Dry</li>
+<li><input type="checkbox" name="Fluids" value="Red Wine Sweet">Red Wine Sweet</li>
+<li><input type="checkbox" name="Fluids" value="Rice">Rice</li>
+<li><input type="checkbox" name="Fluids" value="Ricotta">Ricotta</li>
+<li><input type="checkbox" name="Fluids" value="Rigatoni">Rigatoni</li>
+<li><input type="checkbox" name="Fluids" value="Roquefort">Roquefort</li>
+<li><input type="checkbox" name="Fluids" value="Salt">Salt</li>
+<li><input type="checkbox" name="Fluids" value="Sour Cream">Sour Cream</li>
+<li><input type="checkbox" name="Fluids" value="Spaghetti">Spaghetti</li>
+<li><input type="checkbox" name="Fluids" value="Tagliatelle">Tagliatelle</li>
+<li><input type="checkbox" name="Fluids" value="Torteglini">Torteglini</li>
+<li><input type="checkbox" name="Fluids" value="Vegetable Broth">Vegetable Broth</li>
+<li><input type="checkbox" name="Fluids" value="Vinegar">Vinegar</li>
+<li><input type="checkbox" name="Fluids" value="Yogurt">Yogurt</li>
+<li><input type="checkbox" name="Fluids" value="Water">Water</li>
+<li><input type="checkbox" name="Fluids" value="White Wine Dry">White Wine Dry</li>
+<li><input type="checkbox" name="Fluids" value="White Wine Sweet">White Wine Sweet</li>
+</ul>
+</li>
+</ul>				
+<input id= "koumpi" type="image" src="search.png" value="Find me a recipe">
+</form>
+
+
+	
+	</body>
+</html>

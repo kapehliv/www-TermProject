@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+<servlet>
+        <servlet-name>A</servlet-name>
+        <servlet-class>Search</servlet-class>
+</servlet>
+<servlet>
+        <servlet-name>E</servlet-name>
+        <servlet-class>PicUpload</servlet-class>
+</servlet>
+<servlet>
+        <servlet-name>B</servlet-name>
+        <servlet-class>SearchIng</servlet-class>
+</servlet>
+<servlet>
+        <servlet-name>C</servlet-name>
+        <servlet-class>DisplayRecipe</servlet-class>
+</servlet>
+<servlet>
+        <servlet-name>D</servlet-name>
+        <servlet-class>Upload</servlet-class>
+</servlet>
+<servlet>
+  <servlet-name>LoginPage</servlet-name>
+  <servlet-class>Login</servlet-class>
+ </servlet>
+<servlet>
+  <servlet-name>sign</servlet-name>
+  <servlet-class>Signup</servlet-class>
+ </servlet>
+<servlet-mapping>
+ <servlet-name>LoginPage</servlet-name>
+ <url-pattern>/Login</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+ <servlet-name>sign</servlet-name>
+ <url-pattern>/Signup</url-pattern>
+ </servlet-mapping>
+<servlet-mapping>
+        <servlet-name>A</servlet-name>
+        <url-pattern>/Search</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+        <servlet-name>E</servlet-name>
+        <url-pattern>/PicUpload</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+        <servlet-name>B</servlet-name>
+        <url-pattern>/SearchIng</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+        <servlet-name>C</servlet-name>
+        <url-pattern>/DisplayRecipe</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+        <servlet-name>D</servlet-name>
+        <url-pattern>/Upload</url-pattern>
+</servlet-mapping>
+</web-app>
